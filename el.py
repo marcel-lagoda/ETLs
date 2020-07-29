@@ -14,7 +14,8 @@ target_cursor = target_cnx.cursor()
 source_cursor.execute("SELECT table_name\n"
                       "FROM information_schema.columns\n"
                       "WHERE table_schema  = 'public'"
-                      "AND table_name IN ('actors')")
+                      "AND table_name IN ('actors')"
+                      "GROUP BY 1")
 
 source_tables = source_cursor.fetchall()
 
