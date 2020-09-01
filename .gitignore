@@ -467,3 +467,7 @@ MigrationBackup/
 .ionide/
 
 # End of https://www.toptal.com/developers/gitignore/api/vim,pycharm+all,visualstudio
+
+# Project files
+secrets.json
+notes.py
