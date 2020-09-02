@@ -470,4 +470,4 @@ MigrationBackup/
 
 # Project files
 secrets.json
-notes.py
+notes/notes.py
