@@ -2,7 +2,7 @@ import psycopg2
 from secrets import get_secrets
 
 
-def connect() -> object:
+def connect():
     return psycopg2.connect(
         user=get_secrets("postgres_username"),
         password=get_secrets("postgres_db_pwd"),

@@ -7,7 +7,7 @@ def connect():
         user=get_secrets("postgres_username"),
         password=get_secrets("postgres_db_pwd"),
         host="localhost",
-        database="testing",
+        database="test",
     )
 
     cnx.set_session(autocommit=True)
@@ -60,14 +60,6 @@ create_products_query = \
     constraint product_pkey primary key(product_id)
     );
     """
-
-
-def execute(cursor, sql):
-    try:
-        cursor.execute(sql)
-    except (psycopg2.OperationalError, psycopg2.DatabaseError) as e:
-        print(e)
-
 
 if __name__ == "__main__":
     cnx = connect()
