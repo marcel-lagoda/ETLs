@@ -18,10 +18,10 @@
     "default": {
         "petl": {
             "hashes": [
-                "sha256:e559dca0b78fddbcf90b193b4e23000c1df83dde73bf5a9cf1f5fabbe5f10185"
+                "sha256:6ae127469b3403029f8431490ac584ab3091b174512b5161494cd4bf85753d92"
             ],
             "index": "pypi",
-            "version": "==1.6.2"
+            "version": "==1.6.8"
         },
         "psycopg2-binary": {
             "hashes": [
